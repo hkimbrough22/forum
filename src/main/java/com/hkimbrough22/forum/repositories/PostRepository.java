@@ -1,4 +1,7 @@
 package com.hkimbrough22.forum.repositories;
 
-public interface PostRepository {
+import com.hkimbrough22.forum.models.Post;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface PostRepository extends JpaRepository<Post, Long> {
 }
